@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+
+.btnBox{
+    background-image: url(./img/forest.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .topBox{
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+
+.move{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    transition: all .2s;
+}
+
+.move::before{
+    top: -2px;
+    left:-2px;
+}
+
+.move::after{
+    top: 2px;
+    left: 2px;
+}
+.move::before,
+.move::after{
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+}
+
+.move:hover{
+    color: aquamarine;
+}
+.move:hover::before,
+.move:hover::after{
+    width: 10%;
+    height: 100%;
+}
+
+
+.move:hover::before{
+    border-bottom-color: aquamarine;
+    border-left-color: aquamarine;
+    transition: height .3s, width .3s .3s;
+} */
+
+/* .move.move:hover::after{
+    border-top-color: aquamarine;
+    border-right-color: aquamarine;
+    transition: height .3s, width .3s .3s;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+.move {
+    position: relative;
+    display: inline-block;
+    padding: .9em 3.6em;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 1s;
+}
+.move::before,
+.move::after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+}
+.move::before {
+    top: -2px;
+    left: -2px;
+}
+.move::after {
+    bottom: -2px;
+    right: -2px;
+}
+.move:hover {
+    color: #3be5ae;
+    transition: 1s;
+}
+.move:hover::before,
+.move:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.move:hover::before {
+    border-bottom-color: #3be5ae;
+    border-left-color: #3be5ae;
+    transition: height .3s, width .3s .3s;
+}
+.move:hover::after {
+    border-top-color: #3be5ae;
+    border-right-color: #3be5ae;
+    transition: height .3s, width .3s .3s;
+}
+
+/* twice.html 始まり*/
+.header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tittle{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    transition: all .2s;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.top-right{
+    display: flex;
+}
+
+.part-menu{
+    margin-right: 30px;
+    font-size: 20px;
+}
+.part-menu:hover{
+    border-bottom: 2px solid black;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.pic{
+    width: 330px;
+    height: 330px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.pic:hover{
+    box-shadow: 10px 10px 10px;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    transform: scale(1.2) rotate(9deg);
+    border: 2px solid white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modal */
+.modal{
+    display: none;
+    position: absolute;
+    /* position: relative; */
+    /* top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -250px; */
+    top: 500px;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    height: 80%;
+    z-index: 2;
+}
+.mopic{
+    width: 800px;
+    height: 600px;
+}
+
+/* .modaiPic{
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px 4px white;
+} */
+
+span{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 750px;
+    color: white;
+    font-size: 40px;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+span:hover{
+    transition: 1s;
+    transform: rotateX(360deg);
+    color: black;
+}
+#bg{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.modal-open{
+    overflow: hidden;
+    background-color: gray;
+}
+
+
+
+footer{
+    background-color: black;
+    margin-top: 150px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.memory{
+    font-size: 35px;
+    color: white;
+}
